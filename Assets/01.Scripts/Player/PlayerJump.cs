@@ -52,5 +52,8 @@ public class PlayerJump : MonoBehaviour
         if(other.CompareTag("Obstacle")) {
             GameManager.Instance.GameOver();
         }
+        else if(other.CompareTag("Scoring")) {
+            GameManager.Instance.Scoring();
+        }
     }
 }
